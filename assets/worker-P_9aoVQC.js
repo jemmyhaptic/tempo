@@ -1,0 +1,1 @@
+(function(){"use strict";let n=navigator.connection.type;function e(){console.log(`Connection type changed from ${n} to ${navigator.connection.effectiveType}`),n=navigator.connection.type}navigator.connection.addEventListener("change",e),self.onmessage=function(){const t=n;self.postMessage(t)}})();
